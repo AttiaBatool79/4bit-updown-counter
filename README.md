@@ -1,4 +1,4 @@
-# 🔢 4-Bit Up/Down Counter on Nexys 4 DDR (Artix-7 FPGA)
+# 4-Bit Up/Down Counter on Nexys 4 DDR (Artix-7 FPGA)
 
 This project implements a **4-bit Up/Down Counter** using **Verilog**, specifically designed for the **Nexys 4 DDR FPGA board (Artix-7)**. The counter operates at **1 Hz**, and its value is displayed on **4 LEDs** (binary) and a **7-segment display** (hexadecimal `0`–`F`). The direction of counting (increment or decrement) is controlled via a **switch input**:
 - `x = 0` → **Increment**
@@ -6,31 +6,31 @@ This project implements a **4-bit Up/Down Counter** using **Verilog**, specifica
 
 ---
 
-## 📦 Table of Contents
+## Table of Contents
 
-- [🔧 Hardware Used](#-hardware-used)
-- [🎯 Project Objective](#-project-objective)
-- [📁 Project Structure](#-project-structure)
-- [📜 Verilog Code](#-verilog-code)
-- [📂 Vivado Project Setup](#-vivado-project-setup)
-- [🎛️ Input/Output Pin Mapping](#-inputoutput-pin-mapping)
-- [📊 Visual Diagrams](#-visual-diagrams)
-- [🎥 Demo Video](#-demo-video)
-- [🧪 Simulation (Optional)](#-simulation-optional)
-- [📚 How to Run](#-how-to-run)
-
----
-
-## 🔧 Hardware Used
-
-- 🎛️ **FPGA Board:** Nexys 4 DDR (Artix-7 XC7A100T-1CSG324C)
-- 💡 **LEDs (LD0–LD3):** For binary output
-- 🔘 **Switch (SW0):** To control count direction
-- 📟 **7-Segment Display (CA–CG):** To display hexadecimal value
+- [ Hardware Used](#-hardware-used)
+- [ Project Objective](#-project-objective)
+- [ Project Structure](#-project-structure)
+- [ Verilog Code](#-verilog-code)
+- [ Vivado Project Setup](#-vivado-project-setup)
+- [🎛 Input/Output Pin Mapping](#-inputoutput-pin-mapping)
+- [ Visual Diagrams](#-visual-diagrams)
+- [ Demo Video](#-demo-video)
+- [ Simulation (Optional)](#-simulation-optional)
+- [ How to Run](#-how-to-run)
 
 ---
 
-## 🎯 Project Objective
+## Hardware Used
+
+-  **FPGA Board:** Nexys 4 DDR (Artix-7 XC7A100T-1CSG324C)
+-  **LEDs (LD0–LD3):** For binary output
+-  **Switch (SW0):** To control count direction
+-  **7-Segment Display (CA–CG):** To display hexadecimal value
+
+---
+
+## Project Objective
 
 Design a **4-bit counter** that:
 - Counts **up when x = 0**
@@ -42,7 +42,7 @@ Design a **4-bit counter** that:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 # Vivado Project Setup
 ## Step-by-Step Guide
 
@@ -72,7 +72,7 @@ Design a **4-bit counter** that:
 
 ---
 
-## 🎛️ Input/Output Pin Mapping
+##  Input/Output Pin Mapping
 
 | Signal       | Connected To | Description                        |
 |--------------|--------------|------------------------------------|
@@ -84,30 +84,30 @@ Design a **4-bit counter** that:
 
 ---
 
-## 📊 Visual Diagrams
-### 🔷 RTL Schematic
+## Visual Diagrams
+### RTL Schematic
 
-### 🔷 Technology Schematic
+### Technology Schematic
 
-### 🔷 Simulation Waveform
+### Simulation Waveform
 
-### 🔷 Block Diagram
+### Block Diagram
 
 ---
 
-## 🎥 Demo Video
+## Demo Video
 Watch the full demo on hardware:
 
 ▶️ Click to watch
 
 ---
 
-## 🧪 Simulation (Optional)
+## Simulation (Optional)
 You can simulate the design using Vivado's Simulation feature. Here is a testbench file to help with the simulation of your 4-bit up/down counter.
 
 ---
 
-## 📚 How to Run
+## How to Run
 1. Open Vivado and create a new project.
 2. Add your source files and constraints.
 3. Run Synthesis and Implementation.
