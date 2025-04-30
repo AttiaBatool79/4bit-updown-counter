@@ -1,25 +1,25 @@
 # 4-Bit Up/Down Counter on Nexys 4 DDR (Artix-7 FPGA)
 
-This project implements a **4-bit Up/Down Counter** using **Verilog**, specifically designed for the **Nexys 4 DDR FPGA board (Artix-7)**. The counter operates at **1 Hz**, and its value is displayed on **4 LEDs** (binary) and a **7-segment display** (hexadecimal `0`–`F`). The direction of counting (increment or decrement) is controlled via a **switch input**:  
-- `x = 0` → **Increment**  
-- `x = 1` → **Decrement**
+This project implements a **4-bit Up/Down Counter** using **Verilog**, specifically designed for the **Nexys 4 DDR FPGA board (Artix-7)**. The counter operates at **1 Hz**, and its value is displayed on **4 LEDs** (binary) and a **7-segment display** (hexadecimal `0`–`F`). The direction of counting (increment or decrement) is controlled via a **switch input**:
+- `x = 0` → Increment
+- `x = 1` → Decrement
 
 ---
 
 ## Table of Contents
 
-- [Hardware Used](#hardware-used)  
-- [Project Objective](#project-objective)  
-- [Project Structure](#project-structure)  
-- [Verilog Code](#verilog-code)  
-- [Vivado Project Setup](#vivado-project-setup)  
-- [Input/Output Pin Mapping](#inputoutput-pin-mapping)  
-- [Visual Diagrams](#visual-diagrams)  
-- [Demo Video](#demo-video)  
-- [Simulation (Optional)](#simulation-optional)  
-- [How to Run](#how-to-run)  
-- [File Attachments](#file-attachments)  
-- [License](#license)  
+- [Hardware Used](#hardware-used)
+- [Project Objective](#project-objective)
+- [Project Structure](#project-structure)
+- [Verilog Code](#verilog-code)
+- [Vivado Project Setup](#vivado-project-setup)
+- [Input/Output Pin Mapping](#inputoutput-pin-mapping)
+- [Visual Diagrams](#visual-diagrams)
+- [Demo Video](#demo-video)
+- [Simulation (Optional)](#simulation-optional)
+- [How to Run](#how-to-run)
+- [File Attachments](#file-attachments)
+- [License](#license)
 
 ---
 
@@ -34,28 +34,33 @@ This project implements a **4-bit Up/Down Counter** using **Verilog**, specifica
 
 ## Project Objective
 
-Design a **4-bit counter** that:  
-- Counts **up when x = 0**  
-- Counts **down when x = 1**  
-- Operates at **1 Hz** using a clock divider  
+Design a 4-bit counter that:
+- Counts up when x = 0  
+- Counts down when x = 1  
+- Operates at 1 Hz using a clock divider  
 - Displays value:  
-  - **Binary on 4 LEDs**  
-  - **Hexadecimal on 1 SSD**  
+  - Binary on 4 LEDs  
+  - Hexadecimal on 1 SSD  
 
 ---
 
 ## Project Structure
 
-The project is structured into the following modules and files:
-- `updown_counter.v` - Verilog module for counter logic  
-- `updown_counter.xdc` - Constraints file for pin mapping  
-- Optional simulation testbench file  
+This project consists of the following key elements:
+- Verilog source file (`updown_counter.v`)
+- Constraints file (`updown_counter.xdc`)
+- Optional simulation testbench
+- Demo video and schematic image
 
 ---
 
 ## Verilog Code
 
-The main functionality of the 4-bit counter is implemented in `updown_counter.v`. This module uses the `clk` input for counting and `x` input for direction control.
+The Verilog file `updown_counter.v` implements:
+- Clock divider to generate 1 Hz clock
+- 4-bit counter logic
+- Direction control using input `x`
+- LED and 7-segment display output logic
 
 ---
 
@@ -82,10 +87,10 @@ The main functionality of the 4-bit counter is implemented in `updown_counter.v`
 - Run Implementation to generate the bitstream  
 
 #### Generate Bitstream
-- Click `Generate Bitstream` after implementation  
+- Click "Generate Bitstream" after implementation  
 
 #### Program FPGA
-- Connect the FPGA board and click `Program Device` in Vivado  
+- Connect the FPGA board and click "Program Device" in Vivado  
 
 ---
 
@@ -112,15 +117,14 @@ The main functionality of the 4-bit counter is implemented in `updown_counter.v`
 
 ## Demo Video
 
-Watch the full demo on hardware:  
-*Click to watch*
+Watch the full demonstration of the 4-bit counter on hardware.
 
 ---
 
 ## Simulation (Optional)
 
-You can simulate the design using Vivado's built-in simulation feature.  
-A testbench file is provided to verify the up/down counter logic.
+You can simulate the design using Vivado's built-in simulation tools.  
+A testbench file is included to validate the counter logic.
 
 ---
 
@@ -132,20 +136,18 @@ A testbench file is provided to verify the up/down counter logic.
 4. Generate the bitstream  
 5. Program the FPGA using Vivado’s hardware manager  
 
-You should now see the 4-bit counter working on the Nexys 4 board with binary output on LEDs and hexadecimal display on the 7-segment.
+You should now see the 4-bit counter working, with outputs shown on LEDs and a 7-segment display.
 
 ---
 
 ## File Attachments
 
-- `updown_counter.v` - Verilog module source code  
-- `updown_counter.xdc` - Constraints file for pin assignments  
-
-These files are essential for compiling and programming the FPGA in Vivado.
+- `schematic_diagram.png` — Schematic and block representation of the 4-bit counter design  
+- `counter_demo.mp4` — Video demo showing the implemented counter running on Nexys 4 board  
 
 ---
 
 ## License
 
-This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute it for personal or academic purposes.
+This project is licensed under the MIT License.
+
