@@ -14,8 +14,6 @@ This project implements a **4-bit Up/Down Counter** using **Verilog**, specifica
 - [Verilog Code](#verilog-code)
 - [Vivado Project Setup](#vivado-project-setup)
 - [Input/Output Pin Mapping](#inputoutput-pin-mapping)
-- [Visual Diagrams](#visual-diagrams)
-- [Demo Video](#demo-video)
 - [Simulation (Optional)](#simulation-optional)
 - [How to Run](#how-to-run)
 - [File Attachments](#file-attachments)
