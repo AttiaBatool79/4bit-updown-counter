@@ -98,26 +98,10 @@ The Verilog file `updown_counter.v` implements:
 
 | Signal       | Connected To | Description                        |
 |--------------|--------------|------------------------------------|
-| clk          | W5           | 100 MHz onboard clock              |
+| clk          | E3           | 100 MHz onboard clock              |
 | x            | SW0          | Direction control switch           |
 | leds[3:0]    | LD0–LD3      | Count output in binary             |
 | seg[6:0]     | CA–CG        | 7-segment segments                 |
-| an[3:0]      | AN0–AN3      | Only AN0 enabled                   |
-
----
-
-## Visual Diagrams
-
-- RTL Schematic  
-- Technology Schematic  
-- Simulation Waveform  
-- Block Diagram  
-
----
-
-## Demo Video
-
-Watch the full demonstration of the 4-bit counter on hardware.
 
 ---
 
