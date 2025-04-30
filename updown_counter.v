@@ -1,45 +1,10 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/30/2025 09:16:53 AM
-// Design Name: 
-// Module Name: updown_counter
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module updown_counter(
     input clk,           
     input x,              
     output reg [3:0] leds, 
     output reg [6:0] ssd   
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 reg [26:0] count_1hz;
 reg clk_1hz;
 
